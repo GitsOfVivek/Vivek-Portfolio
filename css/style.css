@@ -65,13 +65,12 @@ a {
 	font-size: 2rem;
 	text-transform: uppercase;
 }
-.logo a {
+#logo-img {
 	display: inline-block;
-	background: linear-gradient(134deg, #6a98f0 0%, #4961dc 99%);
-	-webkit-background-clip: text;
-	color: transparent;
-	font-weight: 700;
-	font-size: 3rem;
+	width: 2.5rem;
+}
+.invert-img {
+	filter: invert();
 }
 .navigation {
 	display: flex;
