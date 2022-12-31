@@ -65,7 +65,7 @@ a {
 	font-size: 2rem;
 	text-transform: uppercase;
 }
-#logo-img {
+.logo a #logo-img {
 	display: inline-block;
 	width: 2.5rem;
 }
