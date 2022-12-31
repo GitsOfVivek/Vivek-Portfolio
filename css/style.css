@@ -32,6 +32,9 @@ linear-gradient(134deg, #6A98F0 0%, #4961DC 99%)
 	--color-link-1: rgb(25, 25, 25);
 	--color-link-2: rgb(25, 25, 25, 0.7);
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
 	background-color: var(--color-bg);
 	scroll-behavior: smooth;

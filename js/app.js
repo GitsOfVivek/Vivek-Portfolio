@@ -1,6 +1,7 @@
+const span = document.getElementById('theme');
 const icon = document.getElementById('theme-icon');
 const theme = document.querySelector('body');
-icon.addEventListener('click', function () {
+span.addEventListener('click', function () {
 	icon.classList.toggle('fa-moon');
 	if (theme.classList.contains('dark-mode')) {
 		theme.classList.add('light-mode');
