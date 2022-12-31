@@ -1,8 +1,24 @@
-const span = document.getElementById('theme');
-const icon = document.getElementById('theme-icon');
+// const span = document.getElementById('theme');
+// const icon = document.getElementById('theme-icon');
+// const theme = document.querySelector('body');
+// span.addEventListener('click', function () {
+// 	icon.classList.toggle('fa-moon');
+// 	if (theme.classList.contains('dark-mode')) {
+// 		theme.classList.add('light-mode');
+// 		theme.classList.remove('dark-mode');
+// 	} else {
+// 		theme.classList.remove('light-mode');
+// 		theme.classList.add('dark-mode');
+// 	}
+// });
+
+const toggle = document.getElementById('toggle');
 const theme = document.querySelector('body');
-span.addEventListener('click', function () {
+const icon = document.getElementById('icon');
+toggle.onclick = function () {
+	toggle.classList.toggle('active');
 	icon.classList.toggle('fa-moon');
+
 	if (theme.classList.contains('dark-mode')) {
 		theme.classList.add('light-mode');
 		theme.classList.remove('dark-mode');
@@ -10,4 +26,4 @@ span.addEventListener('click', function () {
 		theme.classList.remove('light-mode');
 		theme.classList.add('dark-mode');
 	}
-});
+};
