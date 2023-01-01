@@ -344,12 +344,10 @@ a {
 	box-shadow: 1px 1px 5px rgb(20, 20, 20, 0.4);
 	opacity: 0.8;
 	transform: translateZ(0);
-	/* backface-visibility: hidden; */
 }
 .shape-project:hover {
 	transform: scale(1.05);
 }
-
 .project-heading {
 	text-transform: uppercase;
 	font-size: 2.5rem;
@@ -371,6 +369,16 @@ a {
 	font-size: 2rem;
 	margin: 0 2rem;
 }
+.project-summary p {
+	margin: 2rem 0;
+}
+
+.bold-feature {
+	font-weight: 600;
+	color: #4961dc;
+	font-size: 2rem;
+}
+
 .project-links {
 	font-size: 1.5rem;
 	margin: 0 2rem;
@@ -417,6 +425,8 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px rgb(20, 20, 20, 0.4);
 }
 .thank-u-block-left {
 	color: var(--color-primary);
@@ -458,6 +468,7 @@ a {
 .form-box {
 	position: relative;
 	width: 100%;
+	padding: 2rem 5rem;
 }
 .row50 {
 	display: flex;
@@ -469,8 +480,19 @@ a {
 	margin-bottom: 1rem;
 	width: 50%;
 }
-.row100 .input-box {
+#msg {
+	height: 15rem;
 	width: 100%;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	padding: 1rem;
+	font-size: 2rem;
+	margin-top: 2rem;
+	resize: none;
+}
+#msg::placeholder {
+	opacity: 0.5;
 }
 .input-box label {
 	color: var(--color-link-1);
@@ -478,26 +500,29 @@ a {
 	font-size: 2rem;
 	outline: none;
 }
-.input-box input {
+input {
+	border-radius: 5px;
 	padding: 1rem;
+	margin-top: 2rem;
 	font-size: 2rem;
 	outline: none;
-	border: 1px solid rgb(0, 0, 0);
+	border: none;
 }
-#theme {
-	color: var(--color-link-1);
+input::placeholder {
+	opacity: 0.5;
+}
+input[type='submit'] {
+	background: linear-gradient(134deg, #6a98f0 0%, #4961dc 99%);
+	padding: 1rem 4rem;
+	color: rgb(250, 250, 250);
+	transition: 0.3s;
+	box-shadow: 2px 2px 10px rgb(25, 25, 25, 0.2);
 	cursor: pointer;
-	font-size: 2rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-left: 2rem;
-	transition: all 0.2s;
-	width: 20px;
 }
-#theme:hover {
-	transform: scale(1.1);
+input[type='submit']:hover {
+	transform: scale(1.05);
+	box-shadow: 2px 2px 10px rgb(25, 25, 25, 0.4);
 }
-#theme:active {
-	transform: scale(0.9);
+input[type='submit']:active {
+	transform: scale(0.95);
 }
