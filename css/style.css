@@ -289,11 +289,14 @@ a {
 }
 
 .my-tech {
-	font-size: 5rem;
-	color: #6a98f0;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+}
+
+.my-tech i {
+	font-size: 5rem;
+	color: #6a98f0;
 	opacity: 0.8;
 }
 
