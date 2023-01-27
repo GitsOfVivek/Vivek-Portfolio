@@ -442,12 +442,34 @@ a {
 	width: 100%;
 	border-radius: 1rem;
 }
+.project__about {
+	margin: 0 0 5rem 0;
+	color: var(--color-link-1);
+	font-size: 2rem;
+}
+.project__about p {
+	margin: 0 0 5rem 0;
+}
 
 .project__about-info {
+	height: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.project__links {
+	width: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	flex-direction: column;
+}
+.project__links a {
+	background-color: #6a98f0;
+	color: #fff;
+	padding: 0.7rem 1rem;
+	font-size: 2rem;
+	border-radius: 5px;
 }
 
 .project-heading {
